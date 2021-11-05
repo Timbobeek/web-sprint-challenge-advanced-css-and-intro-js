@@ -22,13 +22,17 @@ Commit your code regularly and meaningfully.
 
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
-1. How would you describe acessibility on the web to someone new to programming?
+1. How would you describe accessibility on the web to someone new to programming?
 
 Making the web page in such way that everyone can access/use it, including people with disabilities. Whether the person is blind, colorblind, has neurological disabilities, or simply has bad connection on their small mobile device, developers should make sure everyone can navigate through the page they have made.
 
 2. Talk about 3 different things you can do to ensure your website is accessible.
 
-First thing you can utilize on your page is responsive units - using %, em/rem instead of fixed units like pixels will make our page scalable and look good on devices of all sizes. Second, we need to make sure the screen reader, which is often used by people with visual impairment, can read through our page and clearly explain what is on the page to the user. For that to work, developers need to make sure to use a lot of semantic html so that the screen reader can clearly tell between different segments of the web page. In addition, developers should make sure to use contrasting colors on their web page that colorblind people can tell apart and, if possible, provide a visual component on important parts of the page that does not require being able to see all colors.   
+  * you can utilize on your page is responsive units - using %, em/rem instead of fixed units like pixels will make our page scalable and look good on devices of all sizes. 
+
+  * we need to make sure the screen reader, which is often used by people with visual impairment, can read through our page and clearly explain what is on the page to the user. For that to work, developers need to make sure to use a lot of semantic html so that the screen reader can clearly tell between different segments of the web page. 
+  
+  * developers should make sure to use contrasting colors on their web page that colorblind people can tell apart and, if possible, provide a visual component on important parts of the page that does not require being able to see all colors.
 
 3. How would you explain the concept of a variable to someone new to programming?
 
@@ -36,13 +40,11 @@ It's a way to store, change and use data in code.
 
 4. What is the purpose of using functions in code?
 
-To minimize the amount of code we write by writing a small computer program that will repeat sections of code with just a single line. Instead of repeating ourselves by writing the same code multiple times with different variables for example, we just write a function and then call it as many times as we need with arguments we want, which is more efficient and space friendly.
-
+To minimize the amount of code we write by writing a small piece of logic that will repeat sections of code with just a single line. Instead of repeating ourselves by writing the same code multiple times with different variables for example, we just write a function and then call it as many times as we need with arguments we want, which is more efficient and space friendly.
 
 5. How do you access a key inside of an object inside of an array?
 
-array[].key;
-
+array[i].key;
 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
