@@ -245,20 +245,18 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
+  const names = [];
   for (let i = 0; i < array.length; i++ ){
-    const yearBorn = array[i].years.split('-');
-    if (yearBorn > 1899){
-      console.log(array[i]);
+    const years = array[i].years.split('-');
+    const yearBorn = parseInt(years[0]);
+    const yearDied = parseInt(years[1]);
+
+    if (yearBorn > 1899 && yearDied < 2001){
+      names.push(array[i].name);
     }
-    //if (artists[i].years[0,4] > 1899  && artists[i].years[7,11] < 2001){
-      // const newArray = artists[i].years.split('-');
-      // console.log(newArray);
-    }
-  //}
-  //
-  // const newArray = artists.years.split(1900);
-  return array;
   }
+  return names;
+}
 console.log(get20s(artists));
 
 // const yearBorn = artists[0].years.split('-');
@@ -301,9 +299,12 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+  const obj = {id: 20, name: 'Your Name Here', years: 'Your Birth Year - current day',genre: 'Web Design', nationality: 'Your Nationality Here', bio: 'Add 1-2 sentences (or use lorem ipsum)'};
+  array.push(obj);
+  return array;
 }
+console.log(addArtist(artists));
 
 
 
@@ -314,10 +315,26 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+  // {
+  //   "id": 1,
+  //   "name": "Vasiliy Kandinskiy",
+  //   "years": "1866 - 1944",
+  //   "genre": "Expressionism,Abstractionism",
+  //   "nationality": "Russian",
+  //   "bio": "Wassily Wassilyevich Kandinsky (Russian: Васи́лий Васи́льевич Канди́нский, tr. Vasíliy Vasílʹevich Kandínskiy) (16 December [O.S. 4 December] 1866 – 13 December 1944) was a Russian painter and art theorist.",
+  //   "wikipedia": "http://en.wikipedia.org/wiki/Wassily_Kandinsky",
+  //   "paintings": 88
+  // },
+  const names = [];
+  for (let i = 0; i < array.length; i++){
+    if (array[i].paintings > 100) {
+      names.push(array[i].name);
+    }     
+  }
+  return names;
 }
-
+console.log(lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 
