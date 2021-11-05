@@ -134,3 +134,19 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+@media (max-width: 500px){
+    nav{
+        width: 50%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        align-items: center;
+
+    }
+    nav a{
+        font-size: 1em; 
+    }
+    nav span{
+        height: 65%;
+    }
+}
