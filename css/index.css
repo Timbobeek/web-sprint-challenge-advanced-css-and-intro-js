@@ -120,6 +120,7 @@ button:hover{
     box-shadow: 2px 2px 1px white;
 }
 /*Artists Section Styles */
+
 .artists-container{
     display:flex;
     justify-content: space-around;
@@ -168,6 +169,34 @@ button:hover{
     
     .title-container div h1 {
         font-size: 1.8em;
+    }
+
+    /* -----artists-container styles------ */
+
+    .artists-container{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width:100%;
+        margin:0 auto;
+    }
+    
+    .artist{
+        width:80%;
+        text-align:center;
+        font-size: 1em;
+    }
+    .artist img{
+        width:60%;
+        height: 40%;
+    }
+
+    .artist a{
+        font-size: 1em;
+    }
+
+    .artist .bio {
+        font-size: .7em;
     }
 
 
